@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sovereign-hvac-thermo"
+version = "1.0.0"
+description = "Pure domain-driven Python library modeling HVAC vapor-compression refrigeration cycles, psychrometric moist-air properties (ASHRAE formulations), and electrical fault modes. 100% branch test coverage with zero mocks."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Russell Alan Powers", email = "russell@sovereignbizbox.io"}
+]
+keywords = ["sovereign", "thermodynamics & domain-driven design", "microservice", "n8n", "automation"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries"
+]
+dependencies = []
+
+[project.scripts]
+sovereign-hvac-thermo = "src.cli:main"
